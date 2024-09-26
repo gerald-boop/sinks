@@ -1,35 +1,84 @@
-/* Outdated CSS */
-body {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin-bottom: 10px;
+  }
+  
+  .nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    margin: 0;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-img {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    margin-top: 0;
+  }
+  
+  .section img {
     width: 100%;
-    height: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .footer {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+  }
